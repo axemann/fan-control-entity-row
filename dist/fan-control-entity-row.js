@@ -6,7 +6,7 @@ window.customCards.push({
   preview: false,
 });
 
-class CustomFanRow extends Polymer.Element {
+class CustomFanRow extends LitElement {
 
 	static get template() {
 		return Polymer.html`
