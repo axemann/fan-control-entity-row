@@ -6,6 +6,10 @@ window.customCards.push({
   preview: false,
 });
 
+const LitElement = customElements.get("ha-panel-lovelace") ? Object.getPrototypeOf(customElements.get("ha-panel-lovelace")) : Object.getPrototypeOf(customElements.get("hc-lovelace"));
+const html = LitElement.prototype.html;
+const css = LitElement.prototype.css;
+
 class CustomFanRow extends LitElement {
 
 	static get template() {
